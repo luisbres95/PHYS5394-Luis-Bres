@@ -6,6 +6,7 @@ function SigVec = AMgenSig(t,A,f0,f1,psi0)
 % time stamps at which the samples of the signal are to be computed. 'Amp'
 % is the amplitude multiplying the signal. 'freq0' is sampling frequency.
 % 'freq1' is reference frequency.
+%FIXME Doc: Explain psi0 also.
 
 %Luis Mario Bres Castro, February 2022
 
