@@ -13,4 +13,4 @@ function SigVec = AMSigGen(t,A,f0,f1,psi0)
 
 SigVec=cos(2*pi*f1*t).*sin(2*pi*f0*t+psi0); 
 SigVec=A*SigVec./norm(SigVec);
-end
+end 
