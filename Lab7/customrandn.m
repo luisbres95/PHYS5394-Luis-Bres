@@ -8,4 +8,4 @@ function Y = customrandn(mu,sigma)
 %Luis Mario Bres Castro, March 2022
 
 Y=sigma*randn+mu;
-end
+end 
