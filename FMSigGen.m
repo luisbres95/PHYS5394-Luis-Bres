@@ -8,7 +8,7 @@ function SigVec = FMSigGen(t,A,b,f0,f1,psi)
 
 
 %Luis Mario Bres Castro, February 2022
-
+ 
 
 SigVec=sin(2*pi*f0*t+b*cos(2*pi*f1*t)+psi); 
 SigVec=A*SigVec./norm(SigVec);
