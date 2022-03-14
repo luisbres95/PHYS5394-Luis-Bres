@@ -8,4 +8,4 @@ function Y = customrand(a,b)
 %Luis Mario Bres Castro, March 2022
 
 Y=(b-a)*rand+a;
-end
+end 
