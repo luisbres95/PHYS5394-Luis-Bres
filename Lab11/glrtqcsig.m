@@ -1,13 +1,23 @@
-function llr = glrtqcsig(dataVec,psdPosFreq,a,nSamples)
+function llr = glrtqcsig(dataVec,timeVec,psdPosFreq,a)
+%function llr = glrtqcsig(dataVec,timeVec,psdPosFreq,a,nSamples)
+%FIXME Doc: There isn't any documentation of this function.
+%SDM Follow Matlab or DATASCIENCE_COURSE function documentation style.
+
 %Luis Mario Bres Castro
 %Task 3
-addpath ../Func&data
+%FIXME Should not addpath inside a function
+%addpath ../Func&data
 % This is the target 
 %% Parameters for data realization
 % Number of samples and sampling frequency.
-
-sampFreq = 1024;
-timeVec = (0:(nSamples-1))/sampFreq;
+%FIXME Error: There should not be any hard-coded values in this function
+%FIXME: The time stamps should be supplied as an input argument.
+%FIXME: nSamples in the input argument is not needed since CRCBGENQCSIG handles the actual signal generation
+%FIXME: Var: Variable name 'a' is poorly chosen
+% sampFreq = 1024;
+%SDM
+sampFreq = 1/(timeVec(2)-timeVec(1));
+% timeVec = (0:(nSamples-1))/sampFreq;
 A=1;
 %% Compute GLRT
 %Generate the unit norm signal (i.e., template). Here, the value used for
@@ -21,7 +31,8 @@ sigVec = crcbgenqcsig(timeVec,A,[a(1),a(2),a(3)]);
 llr = innerprodpsd(dataVec,templateVec,sampFreq,psdPosFreq);
 %GLRT is its square
 llr = llr^2;
-disp(llr);
+%FIXME Should not be printing out numbers from within this function
+%disp(llr);
 
 
 end
