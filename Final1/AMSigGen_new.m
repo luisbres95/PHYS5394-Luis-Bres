@@ -1,5 +1,5 @@
 function SigVec = AMSigGen_new(t,A,P)
-
+%FIXME Doc: The documentation of the function was not updated.
 %Generate an Amplitude Modulated Sinusoid Signal
 %S=AMgenSig(time,Amp,freq0,freq1,psi0)
 % Generates an Amplitude Modulated Sinisoid Signal S. 'time' is the vector of
