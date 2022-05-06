@@ -1,7 +1,7 @@
 function [fitVal,varargout] = glrtqcsig4pso(xVec,params)
 %Luis Mario Bres Castro
 %%%%%%%%
-
+%FIXME Missing documentation. Supply help comments here.
 
 
 %rows: points
